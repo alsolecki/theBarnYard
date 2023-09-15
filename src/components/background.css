@@ -1,0 +1,18 @@
+.sky {
+    background-color:lightskyblue;
+    width: 100vw;
+    height: 40vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+  .barn-bg {
+    background-color: rgb(122 194 36);
+    width: 100vw;
+    height: 12vh;
+    position: fixed;
+    top: 70vw;
+    left: 0;
+    z-index: -1;
+  }

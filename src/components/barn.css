@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --barn-red: hsl(350, 50%, 50%);
+    --barn-brown: hsl(36, 6%, 67%);
+    --barn-brown2: hsl(25, 48%, 21%);
+}
+
+.barn {
+    /* border: purple solid 2px; */
+    position: fixed;
+    top: 12rem;
+    left: 5rem;
+}
+
+.barn:hover {
+    transform: scale(1.15);
+    transition-duration: 1s;
+    
+}
+
+.front-wall {
+    width: 200px;
+    height: 180px;
+    background-color: var(--barn-red);
+}
+
+.front-door {
+    width: 120px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+    border: var(--barn-brown) 4px solid;
+    border-bottom: transparent;
+}
+.barn-door {
+    width: 60px;
+    height: 88px;
+    background-color: var(--barn-red);
+    border: var(--barn-brown) 4px solid;
+    position: absolute;
+    bottom: 3px;
+    left: 20px;
+    z-index: 2;
+}
+
+.barn-door.right {
+    left: 150px;
+}
+.barn-door.right.open {
+    left: 100px;
+}
+.barn-door.left {
+    left: -10px;
+}
+.barn-door.left.open {
+    left: 40px;
+}
+
+
+.roof {
+    width: 220px;
+    height: 80px;
+    background: repeating-linear-gradient(
+            var(--barn-brown),
+          brown 20%,
+            transparent 5%,
+            transparent 10%, var(--barn-brown2)),
+        repeating-linear-gradient(
+            var(--barn-brown),
+            brown 40%,
+            transparent 5%,
+            transparent 10%, var(--barn-brown2)),
+        repeating-linear-gradient(
+            var(--barn-brown),
+            brown 60%,
+            transparent 5%,
+            transparent 10%, var(--barn-brown2)),
+        repeating-linear-gradient(
+            var(--barn-brown),
+            brown 80%,
+            transparent 5%,
+            transparent 10%, var(--barn-brown2));
+        
+    background-color: white;
+    position: absolute;
+    top: -20px;
+    left: -10px;
+}
+
+.fence {
+    height: 18px;
+    width: 100vw;
+    border-top: white 4px solid;
+    border-bottom: white 4px solid;
+    background: repeating-linear-gradient(90deg, white 20px, transparent 40px);
+    position: fixed;
+    top: 50vh;
+    left: 0;
+    z-index: -1;
+  }
+ 

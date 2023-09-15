@@ -1,0 +1,19 @@
+
+p {
+   font-family: 'Comfortaa', cursive;
+ }
+ 
+ .title {
+   margin: 0 auto;
+ }
+ 
+ .welcome-text {
+   color: hsl(0, 100%, 100%); 
+   padding-left: 10vw;
+   padding-right: 10vw; 
+   text-align: left;
+   margin-top: 24rem;
+   border-top: yellow solid 1px;
+   border-bottom: yellow solid 1px;
+ }
+ 
