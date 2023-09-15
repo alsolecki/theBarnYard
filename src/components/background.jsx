@@ -5,8 +5,11 @@ const Background = () => {
   return (
     <div>
         <div className="sky"></div>
-        <div className="barn-bg"></div>
+        <div className="horizon"></div>
+
         <div className="fence"></div>
+
+        <div className="barn-fg"></div>
     </div>
   )
 }

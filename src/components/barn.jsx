@@ -11,7 +11,10 @@ const Barn = () => {
   console.log('Open Door')
   return (
     <>
-    <div className="barn">
+    <div className="barn"
+      // onMouseEnter={() => setOpen(true)}
+      // onMouseLeave={() => setOpen(false)}
+      >
         <div className="barn-door left open"></div>
         <div className="barn-door right open"></div>
         <div className="front-wall"></div>

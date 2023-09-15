@@ -5,14 +5,24 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -2;
-  }
-  .barn-bg {
-    background-color: rgb(122 194 36);
-    width: 100vw;
-    height: 12vh;
-    position: fixed;
-    top: 70vw;
-    left: 0;
     z-index: -1;
+  }
+.horizon {
+  background: linear-gradient(90deg, green, darkgreen);
+  width: 100vw;
+  height: 15vh;
+  position: fixed;
+  left: 0;
+  top: 40vh;
+  z-index: -1;
+}
+
+  .barn-fg {
+    background-color: hsl(43, 34%, 22%);
+    width: 100vw;
+    height: 50vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -3;
   }

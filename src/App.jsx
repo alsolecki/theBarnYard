@@ -5,7 +5,8 @@ import Content from './components/content.jsx'
 import Background from './components/background.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const [open, setOpen] = useState(false)
 
   function dooOpen() {
     
@@ -13,8 +14,19 @@ function App() {
 
   return (
     <>
+    {/* <section
+        className="colorBox"
+        style={{
+            backgroundColor: colorValue,
+            color: isDarkText ? "#000" : "#FFF"
+        }}
+    >
+        <p>{colorValue ? colorValue : "Empty Value"}</p>
+        <p>{hexValue ? hexValue : null}</p>
+    </section> */}
       
       <div>
+
         <Barn />
         <Content />
         <Background />
@@ -24,3 +36,4 @@ function App() {
 }
 
 export default App
+
