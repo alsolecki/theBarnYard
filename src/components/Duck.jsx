@@ -1,9 +1,18 @@
 import React from 'react'
 import './duck.css'
+import { useState } from 'react';
 
 const Duck = () => {
+
+  const [ waddle, setWaddle] = useState(true)
+  const toggleWaddle = () => {
+    setWaddle(!waddle)
+  };
+
   return (
-    <div className="duck">
+    <div className={ waddle ? "duck" : "duck walk"}
+          onClick={ toggleWaddle }
+        >
         <div className="head"></div>
         <div className="eye">
             <div className="eye-outer"></div>

@@ -6,8 +6,46 @@
     position: fixed;
     top: 45%;
     left: 35%;
-    transform: scale(1.25);
 }
+
+.waddle {
+    animation: 5s linear infinite waddle;
+}
+
+.walk {
+    animation: 20s linear infinite walk;
+}
+
+@keyframes waddle {
+    10% {
+      transform: rotate(10deg);
+    }
+    20% {
+      transform: rotate(-10deg);
+    }
+    30% {
+      transform: rotate(10deg);
+    }
+    40% {
+      transform: rotate(-10deg);
+    }
+  }
+
+@keyframes walk {
+    25% {
+        transform: translateX(50px)
+            rotate(10deg);
+    }
+    50% {
+        transform: translateX(100px)
+        
+    }
+    75% {
+        transform: translateX(50px)
+            rotate(-10deg);
+    }
+}
+
 
 .body {
     /* border: red 2px solid; */

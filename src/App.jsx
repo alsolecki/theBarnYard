@@ -7,30 +7,24 @@ import Duck from './components/Duck.jsx'
 
 function App() {
 
-  const [open, setOpen] = useState(false)
+  function openBarndoor() {
+    const [open, setOpen] = useState(true);
+    return open;
+  }
 
-  function dooOpen() {
-    
+  const toggleDoor = () => {
+
+
+    console.log('toggleDoor')
+    const doorOpen = openBarndoor();
+    setOpen(doorOpen);
   } 
 
   return (
-    <>
-    {/* <section
-        className="colorBox"
-        style={{
-            backgroundColor: colorValue,
-            color: isDarkText ? "#000" : "#FFF"
-        }}
-    >
-        <p>{colorValue ? colorValue : "Empty Value"}</p>
-        <p>{hexValue ? hexValue : null}</p>
-    </section> */}
-      
+    <>   
       <div>
-
         <Barn />
 
-        
         <Content />
         <Background />
 
