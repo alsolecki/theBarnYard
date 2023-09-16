@@ -16,7 +16,8 @@
 }
 
 .barn:hover {
-    transform: scale(1.15);
+    /* transform: scale(1.15); */
+    box-shadow: 0px 0px 10px rgba(10, 10% 10%, 0.8);
     transition-duration: 1s;
     
 }

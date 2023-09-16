@@ -3,6 +3,7 @@ import './App.css'
 import Barn from './components/barn.jsx';
 import Content from './components/content.jsx'
 import Background from './components/background.jsx'
+import Duck from './components/Duck.jsx'
 
 function App() {
 
@@ -28,8 +29,12 @@ function App() {
       <div>
 
         <Barn />
+
+        
         <Content />
         <Background />
+
+        <Duck />
       </div>
     </>
   )

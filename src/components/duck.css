@@ -1,0 +1,100 @@
+:root {
+    --duck-yellow: hsl(49, 62%, 74%);
+}
+
+.duck {
+    position: fixed;
+    top: 45%;
+    left: 35%;
+    transform: scale(1.25);
+}
+
+.body {
+    /* border: red 2px solid; */
+    width: 80px;
+    height: 60px;
+    background: linear-gradient(var(--duck-yellow), yellow);
+    border-radius: 50px 70px 20px 30px;
+    transform: rotate(190deg);
+    z-index: 1;
+    position: relative;
+    top: -10px;
+}
+
+.head {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(var(--duck-yellow), yellow);
+    position: relative;
+    top: 50px;
+    right: 10px;
+    z-index: 2;
+}
+
+.eye {
+    position: relative;
+    top: -20px;
+    z-index: 3;
+}
+.eye-outer {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    top: 30px;
+    right: 12px;
+}
+.eye-inner {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    top: 15px;
+    right: 3px;
+}
+.bill
+{
+   
+    position: relative;
+    transform: rotate(10deg);
+}
+
+.bill-bottom {
+    width: 18px;
+    height: 11px;
+    background-color: orange;
+    position: relative;
+    top: -7px;
+    left: -17px;
+}
+.bill-top {
+    width: 19px;
+    height: 10px;
+    background-color: orange;
+    position: relative;
+    top: -3px;
+    right: 22px;
+}
+
+.leg-left {
+    height: 40px;
+    width: 8px;
+    background-color: orange;
+    position: relative;
+    top: -31px;
+    right: -43px;
+}
+.foot-left {
+    transform: rotate(20deg);
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-left: 35px solid orange;
+    border-bottom: 14px solid transparent;
+    position: relative;
+    top: -41px;
+    right: -18px;
+}
