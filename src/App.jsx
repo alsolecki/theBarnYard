@@ -4,6 +4,7 @@ import Barn from './components/barn.jsx';
 import Content from './components/content.jsx'
 import Background from './components/background.jsx'
 import Duck from './components/Duck.jsx'
+import Cow from './components/Cow.jsx'
 
 function App() {
 
@@ -22,6 +23,8 @@ function App() {
 
   return (
     <>   
+      {/* <Navbar2 /> */}
+
       <div>
         <Barn />
 
@@ -29,6 +32,7 @@ function App() {
         <Background />
 
         <Duck />
+        <Cow />
       </div>
     </>
   )

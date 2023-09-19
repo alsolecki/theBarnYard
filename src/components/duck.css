@@ -6,46 +6,35 @@
     position: fixed;
     top: 45%;
     left: 35%;
-}
-
-.waddle {
-    animation: 5s linear infinite waddle;
+    transition: 2s;
+    z-index: 10;
 }
 
 .walk {
-    animation: 20s linear infinite walk;
+    animation: 5s linear infinite walk;
+    transition: 2s ease-in-out;
 }
 
-@keyframes waddle {
-    10% {
-      transform: rotate(10deg);
-    }
-    20% {
-      transform: rotate(-10deg);
-    }
-    30% {
-      transform: rotate(10deg);
-    }
-    40% {
-      transform: rotate(-10deg);
-    }
-  }
 
 @keyframes walk {
-    25% {
-        transform: translateX(50px)
-            rotate(10deg);
+    10% {
+        transform: rotate(-5deg);
     }
+
+    25% {
+        transform: translateX(-15px)
+    }
+
     50% {
-        transform: translateX(100px)
-        
+        transform: translateX(0px);
+    }
+    60% {
+        transform: rotate(5deg);
     }
     75% {
-        transform: translateX(50px)
-            rotate(-10deg);
+        transform: translateX(20px);
     }
 }
-
 
 .body {
     /* border: red 2px solid; */
@@ -95,7 +84,6 @@
 }
 .bill
 {
-   
     position: relative;
     transform: rotate(10deg);
 }

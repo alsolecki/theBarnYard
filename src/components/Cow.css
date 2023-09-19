@@ -1,0 +1,133 @@
+:root {
+    --cow-black-mid: rgb(63, 62, 57);
+    --cow-black-low: rgb(38, 41, 71);
+}
+
+.cow {
+    position: fixed;
+    top: 40%;
+    left: 80%;
+    transition: 2s;
+    transform: scaleX(-1) scaleY(.9);
+    z-index: 1;
+}
+
+.cow-head {
+    width: 102px;
+    height: 72px;
+    border-radius: 50% 60% 40% 40%;
+    position: absolute;
+    top: -38px;
+    background: linear-gradient(30deg, var(--cow-black-low), var(--cow-black-mid));
+    transform: rotate(-80deg);
+}
+    
+.cow-ear {
+    width: 40px;
+    height: 20px;
+    background: linear-gradient(30deg, var(--cow-black-low), var(--cow-black-mid));
+    position: absolute;
+    border-radius: 30%;
+    z-index: 1;
+}
+.cow-ear.right {
+    right: -20px;
+    top: 45px;
+    transform: rotate(30deg);
+}
+.cow-ear.left {
+    left: 83px;
+    top: 9px;
+    transform: rotate(-5deg);
+}
+
+.cow-nostril {
+    width: 18px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    transform: scaleX(0.5);
+    position: absolute;
+}
+.cow-nostril.right {
+    right: 82px;
+    top: 18px;
+}
+.cow-nostril.left {
+    right: 80px;
+    top: 40px;
+}
+
+.cow-eye {
+        position: relative;
+        top: -25px;
+        left: 70px;
+        z-index: 3;
+        transform: scale(.75);
+    }
+
+.cow-eye-outer {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: white;
+        position: relative;
+        top: 30px;
+        right: 12px;
+    }
+    .cow-eye-inner {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: black;
+        position: relative;
+        top: 15px;
+        right: 3px;
+    }
+
+.cow-body {
+    width: 230px;
+    height: 120px;
+    border-radius: 10% 20% 60% 80%;
+    position: absolute;
+    left: 40px;
+    background: linear-gradient(30deg, var(--cow-black-low), var(--cow-black-mid));
+    z-index: -2;
+}
+.cow-leg {
+    width: 20px;
+    height: 100px;
+    position: absolute;
+    top: 80px;
+    background: linear-gradient(30deg, var(--cow-black-low), var(--cow-black-mid));
+    z-index: -3;
+}
+
+.cow-leg.left.front {
+    left: 100px;
+}
+.cow-leg.left.back {
+    left: 70px;
+}
+.cow-leg.right.front {
+    left: 220px;
+}
+.cow-leg.right.back {
+    left: 190px;
+}
+.cow-leg.tail {
+    left: 260px;
+    top: 10px;
+    transform: rotate(-15deg)
+            scale(0.5);
+}
+
+.cow-mouth-outer {
+    height: 60px;
+    width: 50px;
+    position: absolute;
+    left: -15px;
+    top: 5px;
+    background: linear-gradient(30deg, var(--cow-black-low), var(--cow-black-mid));
+    border-radius: 40% 60% 60% 40%;
+}

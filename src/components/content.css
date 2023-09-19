@@ -16,4 +16,30 @@ p {
    border-top: yellow solid 1px;
    border-bottom: yellow solid 1px;
  }
+
+ .animal-list {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* border: solid yellow 1px; */
+ }
+
+ .avatar {
+  list-style-type: none;
+  margin: 3px 20px;
+  border-radius: 50%;
+  border: rgba(250, 250, 250, 0.5) 3px solid;
+  width: fit-content;
+  padding: 4px;
+ }
+
+ .avatar.hide {
+  display: none;
+ }
+
+ .avatar p{
+  text-align: center;
+  font-size: 0.9rem;
+ }
  
