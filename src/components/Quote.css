@@ -1,26 +1,47 @@
-.quote {
+.quote-bubble {
     font-family: 'Comfortaa', cursive;
     color: orangered;
     position: absolute;
     max-width: 80%;
     margin: 0 auto;
-    top: 25%;
-    left: 10%;
+    top: 25vh;
+    left: 20vw;
+    right: 20vw;
     background-color: whitesmoke;
     padding: 8px;
     border-radius: 10px;
     z-index: 5;
+    height: max-content;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.quote-tail {
-    position: absolute;
-    top: 31%;
-    left: 40%;
-    transform: rotate(20deg);
+.quote-bubble::after {
+    content: '';
+    position: relative;
+    top: 25px;
+    transform: rotate(20deg)
+                scale(1.5);
     width: 0;
     height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 40px solid whitesmoke;
-    z-index: 3;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid whitesmoke;
+    display: inline-block;
+    z-index: 4;
+}
+
+.quote-bubble p {
+    margin-bottom: -10px;
+}
+
+.button {
+    padding: 10px;
+}
+
+.visible {
+    opacity: 1.0;
+}
+
+.invisible {
+    opacity: 0.0;
 }
