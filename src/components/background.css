@@ -5,7 +5,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: -5;
   }
 .horizon {
   background: linear-gradient(90deg, green, darkgreen);
@@ -15,6 +15,36 @@
   left: 0;
   top: 40vh;
   z-index: -1;
+}
+
+.hill {
+  width: 25vw;
+  height: 10vh;
+  position: fixed;
+  top: 32vh;
+}
+
+.hill.right {
+  z-index: -3;
+  right: -8vw;
+  transform: scaleX(-2.5) scaleY(1.15);
+  background-color: rgb(100 153 92);
+  border-radius: 10% 90% 0 0;
+}
+.hill.left {
+  z-index: -2;
+  left: -10vw;
+  transform: scaleX(4) scaleY(1.1);
+  background-color: rgb(64 143 64);
+  border-radius: 10% 90% 0 0;
+}
+.hill.middle {
+  z-index: -4;
+  left: 60vw;
+  right: 10vw;
+  transform: scaleX(4) scaleY(2.25);
+  background-color: rgb(121 169 121);
+  border-radius: 50% 90% 0 0;
 }
 
   .barn-fg {

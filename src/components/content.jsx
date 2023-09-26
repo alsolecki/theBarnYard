@@ -16,9 +16,9 @@ const Content = () => {
        <h1 className="title">The Barn Yard</h1>
        <div>
         <ul className="animal-list">
-          <li className="avatar">
+          <li className="avatar hide">
           <p>Duckie</p></li>
-          <li className="avatar">
+          <li className="avatar hide">
           <p>Cowie</p></li>
           <li className="avatar hide">
           <p>Pigie</p></li>

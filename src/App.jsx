@@ -5,9 +5,6 @@ import Content from './components/content.jsx'
 import Background from './components/background.jsx'
 import Duck from './components/Duck.jsx'
 import Cow from './components/Cow.jsx'
-import Dadjoke from './Dadjoke.jsx'
-import Origin from './Origin.jsx'
-import Joke from './Joke.jsx'
 import Quote from './components/Quote.jsx'
 
 
@@ -38,9 +35,6 @@ function App() {
 
         <Duck />
         <Cow />
-        {/* <Dadjoke /> */}
-        {/* <Joke /> */}
-        {/* <Origin /> */}
         <Quote />
       </div>
     </>
