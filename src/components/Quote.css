@@ -1,4 +1,19 @@
-.quote-bubble {
+.quoteBackground {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(200, 200, 200);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 5%;
+  }
+
+.quote-bubble, .quoteContainer {
     font-family: 'Comfortaa', cursive;
     color: orangered;
     position: absolute;
@@ -45,3 +60,22 @@
 .invisible {
     opacity: 0.0;
 }
+
+.titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+  
+  .titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: orangered;
+  }

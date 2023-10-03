@@ -5,10 +5,12 @@ import Content from './components/content.jsx'
 import Background from './components/background.jsx'
 import Duck from './components/Duck.jsx'
 import Cow from './components/Cow.jsx'
-import Quote from './components/Quote.jsx'
+import Cloud from './components/Cloud.jsx'
 
 
 function App() {
+
+  const [openModal, setOpenModal] = useState(false);
 
   function openBarndoor() {
     const [open, setOpen] = useState(true);
@@ -16,8 +18,6 @@ function App() {
   }
 
   const toggleDoor = () => {
-
-
     console.log('toggleDoor')
     const doorOpen = openBarndoor();
     setOpen(doorOpen);
@@ -29,13 +29,21 @@ function App() {
 
       <div>
         <Barn />
-
         <Content />
         <Background />
+        <button 
+          className={openModal ? "hide" : "quote-button" }
+          onClick={() => {
+            setOpenModal(true)
+          }}>
+        {"Get Quote"}
+        </button>
 
-        <Duck />
         <Cow />
-        <Quote />
+        <Duck />
+
+        {openModal && <Cloud closeModal={setOpenModal}  />}
+       
       </div>
     </>
   )

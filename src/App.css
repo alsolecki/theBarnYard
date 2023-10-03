@@ -4,3 +4,18 @@
   text-align: center;
   font-family: 'Cherry Bomb One', cursive;
 }
+
+.btn-container {
+  position: fixed;
+  margin: 10px auto;
+}
+
+.quote-button {
+  color: whitesmoke;
+  margin: 10px auto 6px;
+  padding: 6px;
+}
+
+.hide {
+  opacity: 0;
+}

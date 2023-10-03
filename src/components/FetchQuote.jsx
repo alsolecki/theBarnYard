@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-const GetQuote = ({ setQuote }) => {
+const FetchQuote = ({ setQuote }) => {
 
     const [ data, setData ] = useState(null);
     const [ loading, setLoading ] = useState('true');
@@ -30,23 +30,15 @@ const GetQuote = ({ setQuote }) => {
     if (loading) return "Loading...";
     if (error) return "Error!";
 
+    //Logic for randomizing then setting quote
     const random30 = Math.floor(Math.random() * 30);
     const randomQuote = data.quotes[random30].quote;
-
     setQuote(randomQuote);
     
   return (
     <>
-
-        <div className="quote-bubble">
-            <p>{ randomQuote }</p>
-        </div>
-        <div className="quote-tail"
-                style={ tailPosition }></div>
     </>
   )
 }
 
-const tailPosition = { "position" : "relative", "top" : "-320px", "left" : "90px" };
-
-export default GetQuote
+export default FetchQuote

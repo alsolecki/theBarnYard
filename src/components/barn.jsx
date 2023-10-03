@@ -10,6 +10,10 @@ const Barn = () => {
     setOpen(!open)
   };
 
+  const handleClick = (e) => {
+    console.log(e.target)
+  }
+
   return (
     <>
     <div className="barn">
@@ -17,9 +21,11 @@ const Barn = () => {
             onClick={ toggleDoor }></div>
         <div className={ open ? "barn-door right open" : "barn-door right"}
             onClick={ toggleDoor }></div>
-        <div className="front-wall"></div>
+        <div className="front-wall"
+            onDoubleClick={ handleClick }></div>
         <div className="front-door"></div>
-        <div className="roof"></div>
+        <div className="roof"
+            onDoubleClick={() => console.log('rooftime')}></div>
     </div>
     </>
   )

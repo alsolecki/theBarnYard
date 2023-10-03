@@ -1,0 +1,41 @@
+#cloud {
+    min-width: 30vw;
+    max-width: 500px;
+    height: min-content;
+    background-image: linear-gradient(hsla(200, 20%, 80%, 1) 30% , rgb(169, 149, 188) 80%,  rgb(169, 149, 188));
+    position: fixed;
+    top: 10%;
+    right: 5vw;
+    border-radius: 20px;
+    z-index: 3;
+    padding: 25px 10px 5px 10px;
+}
+
+.quote-parts {
+    display: flex;
+    flex-direction: column;
+}
+.quote-parts::after {
+    content: '';
+    position: relative;
+    top: 15px;
+    left: 10px;
+    transform: rotate(20deg)
+                scale(1.5);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid rgb(169, 149, 188);
+    display: inline-block;
+    z-index: -1;
+}
+
+.cloud-close-btn {
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 1.5rem;
+    text-align: end;
+    margin: -25px 0 -10px;
+    background: transparent;
+    border: none;
+}

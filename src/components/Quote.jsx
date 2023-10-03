@@ -5,23 +5,21 @@ import GetQuote from './GetQuote.jsx'
 
 const quoteBubble = document.querySelector('quote-bubble');
 
-const Quote = () => {
+const Quote = ({ setOpenModal }) => {
 
-    const [ visible, setVisible ] = useState('false');
-
-    const toggleVisible = () => {
-        setVisible(!visible)
-      };
-    
-    console.log(quoteBubble);
-
+    const pullQuote = (quote) => {
+        console.log(quote);
+    }
 
   return (
     <>
-        <GetQuote />
-        <div className="button">
-            <button onClick={ toggleVisible }>NEW QUOTE</button>
+        <div className="titleCloseBtn">
+            <button onClick={() => setOpenModal(false)}>X</button>
         </div>
+        <GetQuote
+          func={pullQuote}
+         />
+        
     </>
   )
 }
