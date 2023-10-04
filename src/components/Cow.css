@@ -5,10 +5,10 @@
 
 .cow {
     position: fixed;
-    top: 40%;
-    left: 80%;
+    top: 58%;
+    right: 6%;
     transition: 2s;
-    transform: scaleX(-1) scaleY(.9);
+    transform: scaleX(-0.75) scaleY(.85);
     z-index: 1;
 }
 

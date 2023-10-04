@@ -11,8 +11,9 @@
 .barn {
     /* border: purple solid 2px; */
     position: fixed;
-    top: 30%;
-    left: 5rem;
+    top: 36vh;
+    left: 3rem;
+    transform: scale(0.95, 0.80)
 }
 
 .barn:hover {
@@ -95,13 +96,13 @@
 }
 
 .fence {
-    height: 18px;
+    height: 1.5rem;
     width: 100vw;
     border-top: white 4px solid;
     border-bottom: white 4px solid;
     background: repeating-linear-gradient(90deg, white 20px, transparent 40px);
     position: fixed;
-    top: 50vh;
+    top: 52vh;
     left: 0;
     z-index: -1;
   }

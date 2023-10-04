@@ -9,12 +9,13 @@ p {
  
  .welcome-text {
    color: hsl(0, 100%, 100%); 
-   padding-left: 10vw;
-   padding-right: 10vw; 
-   text-align: left;
-   margin-top: 28rem;
+   padding-left: 15vw;
+   padding-right: 15vw; 
+   text-align: center;
+   margin-top: 26rem;
    border-top: yellow solid 1px;
    border-bottom: yellow solid 1px;
+
  }
 
  .animal-list {
@@ -43,3 +44,6 @@ p {
   font-size: 0.9rem;
  }
  
+ .title {
+  margin-top: 15vh;
+ }

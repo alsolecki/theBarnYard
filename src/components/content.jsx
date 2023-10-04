@@ -33,7 +33,7 @@ const Content = () => {
         </ul>
        </div>
         <section className="welcome-text">
-          <p>Welcome to the Barn Yard: a place for animals. Let's welcome our newest member, Duckie! </p>
+          <p>A Place for Animals!</p>
         </section>
       </div>
     </>

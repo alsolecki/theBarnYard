@@ -31,13 +31,13 @@ function App() {
         <Barn />
         <Content />
         <Background />
-        <button 
+        {/* <button 
           className={openModal ? "hide" : "quote-button" }
           onClick={() => {
             setOpenModal(true)
           }}>
         {"Get Quote"}
-        </button>
+        </button> */}
 
         <Cow />
         <Duck />
