@@ -41,9 +41,9 @@ const Navbar2 = () => {
             </div>
 
         <ul className={ menuOpen ? "open" : "unopen"} >
-            <li><Link to="https://thebarnyard.netlify.app/">theBarnYard</Link></li>
-            <li><Link to="https://exhibitgallery.netlify.app">exhibitGallery</Link></li>
-            <li><Link to="https://foodclock.netlify.app">foodClock</Link></li>
+            <li><Link to="https://exhibitgallery.netlify.app">ExhibitGallery</Link></li>
+            <li><Link to="https://foodclock.netlify.app">FoodClock</Link></li>
+            <li><Link to="https://thebarnyard.netlify.app/">BarnYard</Link></li>
             <li> 
                 <a href="https://babyouterspace.netlify.app/">
                 <img src={ toySVG } alt="Toy Duck Icon" width="16px" height="16px"/></a>

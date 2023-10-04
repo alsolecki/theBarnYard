@@ -1,10 +1,12 @@
 
 nav {
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(30, 30, 30, 1);
     position: fixed;
+    left: 0;
     width: 100%;
     top: 0;
     z-index: 2;

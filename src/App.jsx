@@ -6,6 +6,7 @@ import Background from './components/background.jsx'
 import Duck from './components/Duck.jsx'
 import Cow from './components/Cow.jsx'
 import Cloud from './components/Cloud.jsx'
+import Navbar2 from './navbar/Navbar2.jsx'
 
 
 function App() {
@@ -25,8 +26,7 @@ function App() {
 
   return (
     <>   
-      {/* <Navbar2 /> */}
-
+      <Navbar2 />
       <div>
         <Barn />
         <Content />
