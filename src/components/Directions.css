@@ -1,0 +1,61 @@
+.directions {
+    position: fixed;
+    top: 60vh;
+    left: 10vh;
+}
+
+.directions p {
+    color: magenta;
+    font-size: 1.65rem;
+    font-family: 'Cherry Bomb One', cursive;
+    text-shadow: 2px 2px 10px black;
+    line-height: 1.85rem;
+    text-align: left;
+    width: auto;
+    margin: 4px auto 2px;
+}
+
+.hide {
+    display: none;
+}
+
+.direction-box1 {
+    display: flex;
+    /* border: magenta 1px solid; */
+    flex-direction: column;
+}
+.direction-box2 {
+    margin-top: 20px;
+    width: 220px;
+}
+
+.w-6.h-6 {
+    padding-left: 20px;
+}
+
+.egg {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: lime solid 2px;
+    top: 20px;
+    margin: 3px;
+    transition: all 0.5s ease-out;
+}
+
+.egg:hover {
+    background: limegreen; 
+    color: black;
+    cursor: pointer;
+}
+
+.eggbox {
+    display: flex;
+    width: 90px;
+    /* border: orange solid 1px; */
+    position: fixed;
+    top: 52vh;
+    left: 6.5rem;
+    transition: all 1s ease-out;
+
+}

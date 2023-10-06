@@ -6,41 +6,57 @@ import Background from './components/background.jsx'
 import Duck from './components/Duck.jsx'
 import Cow from './components/Cow.jsx'
 import Cloud from './components/Cloud.jsx'
+import Directions from './components/Directions.jsx'
 import Navbar2 from './navbar/Navbar2.jsx'
 
 
 function App() {
 
   const [openModal, setOpenModal] = useState(false);
+  const [viewCow, setViewCow] = useState(false);
+  const [viewDuck, setViewDuck] = useState(false);
 
-  function openBarndoor() {
-    const [open, setOpen] = useState(true);
-    return open;
+  const [door, setDoor] = useState(true);
+  const [directionStep, setDirectionStep ] = useState(1);
+  const [step, setStep] = useState(1);
+
+  function handleClick() {
+    setStep(step + 1);
   }
 
-  const toggleDoor = () => {
-    console.log('toggleDoor')
-    const doorOpen = openBarndoor();
-    setOpen(doorOpen);
-  } 
+  const changeStep = () => {
+    () => {
+      setDirectionStep(0);
+    }
+    console.log('open door');
+  }
+
+  if (!door) { () => { changeStep() }  };
+
 
   return (
     <>   
       <Navbar2 />
+
       <div>
-        <Barn />
+        <Barn door={ door }
+              setDoor={ setDoor }
+              message='release the animals!'
+              setDirectionStep={ setDirectionStep }
+              directionStep={ directionStep }
+        />
         <Content />
         <Background />
-        {/* <button 
-          className={openModal ? "hide" : "quote-button" }
-          onClick={() => {
-            setOpenModal(true)
-          }}>
-        {"Get Quote"}
-        </button> */}
+        
+        <Directions setDirectionStep={ setDirectionStep }
+                    directionStep={ directionStep }
+                    door={ door }
+                    message='good day'
+        />
 
-        <Cow />
-        <Duck />
+        {viewCow && <Cow closeModal={ setViewCow } />}
+        
+        {viewDuck && <Duck viewDuck={ setViewDuck } />}
 
         {openModal && <Cloud closeModal={setOpenModal}  />}
        

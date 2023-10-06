@@ -1,7 +1,7 @@
 import React from 'react'
 import './Cow.css'
 
-const Cow = () => {
+const Cow = ( { closeModal } ) => {
   return (
     <div className="cow">
         <div className="cow-head">

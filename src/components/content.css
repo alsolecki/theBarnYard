@@ -4,7 +4,10 @@ p {
  }
  
  .title {
-   margin: 0 auto;
+  
+   position: relative;
+   top: 0;
+
  }
  
  .welcome-text {
@@ -15,6 +18,8 @@ p {
    margin-top: 26rem;
    border-top: yellow solid 1px;
    border-bottom: yellow solid 1px;
+   position: relative;
+   bottom: 2vh;
 
  }
 

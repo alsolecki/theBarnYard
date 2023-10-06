@@ -2,13 +2,15 @@ import React from 'react'
 import './duck.css'
 import { useState } from 'react';
 
-const Duck = () => {
+const Duck = ( viewDuck ) => {
 
   const [ waddle, setWaddle] = useState(true)
   const toggleWaddle = () => {
     setWaddle(!waddle)
   };
 
+  viewDuck(true);
+  
   return (
     <div className={ waddle ? "duck" : "duck walk"}
           onClick={ toggleWaddle }
