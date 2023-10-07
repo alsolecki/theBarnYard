@@ -11,7 +11,7 @@
 .barn {
     /* border: purple solid 2px; */
     position: fixed;
-    top: 36vh;
+    top: 39vh;
     left: 3rem;
     transform: scale(0.95, 0.80)
 }
