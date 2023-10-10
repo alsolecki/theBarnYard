@@ -56,3 +56,13 @@
   left: 0;
   z-index: -3;
 }
+
+.title {
+  display: flex;
+  margin-top: 15vh;
+  justify-content: center;
+ }
+
+.title h1 {
+  font-size: 2.4rem;
+}

@@ -13,7 +13,6 @@ const Content = () => {
   return (
     <>
       <div className="content">
-       <h1 className="title">The Barn Yard</h1>
        <div>
         <ul className="animal-list">
           <li className="avatar hide">

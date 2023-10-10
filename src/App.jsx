@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import './App.css'
 import Barn from './components/barn.jsx';
-import Content from './components/content.jsx'
 import Background from './components/background.jsx'
 import Duck from './components/Duck.jsx'
 import Cow from './components/Cow.jsx'
 import Cloud from './components/Cloud.jsx'
 import Directions from './components/Directions.jsx'
 import Navbar2 from './navbar/Navbar2.jsx'
+import Cartoon from './components/Cartoon.jsx'
 
 
 function App() {
@@ -38,6 +38,8 @@ function App() {
     <>   
       <Navbar2 />
 
+      
+
       <div>
         <Barn door={ door }
               setDoor={ setDoor }
@@ -45,7 +47,6 @@ function App() {
               setDirectionStep={ setDirectionStep }
               directionStep={ directionStep }
         />
-        <Content />
         <Background />
         
         <Directions setDirectionStep={ setDirectionStep }
@@ -59,6 +60,8 @@ function App() {
         {viewDuck && <Duck viewDuck={ setViewDuck } />}
 
         {openModal && <Cloud closeModal={setOpenModal}  />}
+
+        {/* <Cartoon /> */}
        
       </div>
     </>
