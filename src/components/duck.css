@@ -4,11 +4,11 @@
 
 .duck {
     position: fixed;
-    top: 57vh;
-    left: 15%;
+    top: 42vh;
+    left: 40vw;
     transition: 2s;
     z-index: 10;
-    transform: scale(0.85);
+    transform: scale(0.5);
 }
 
 .walk {

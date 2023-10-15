@@ -8,12 +8,18 @@
     --barn-brown2: hsl(25, 48%, 21%);
 }
 
+.barn-container {
+    display: flex;
+    justify-content: center;
+}
+
 .barn {
     /* border: purple solid 2px; */
     position: fixed;
     top: 39vh;
-    left: 3rem;
-    transform: scale(0.95, 0.80)
+    /* left: 3rem; */
+    transform: scale(0.95, 0.80);
+    
 }
 
 .barn:hover {

@@ -2,17 +2,16 @@ import React from 'react'
 import './duck.css'
 import { useState } from 'react';
 
-const Duck = ( viewDuck ) => {
+const Duck = ( ) => {
 
   const [ waddle, setWaddle] = useState(true)
   const toggleWaddle = () => {
     setWaddle(!waddle)
   };
-
-  viewDuck(true);
   
   return (
     <div className={ waddle ? "duck" : "duck walk"}
+          // style={ duckIsVisible ? { opacity : "1" } : { opacity : "0" } }
           onClick={ toggleWaddle }
         >
         <div className="head"></div>
