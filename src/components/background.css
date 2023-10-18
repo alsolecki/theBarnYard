@@ -1,5 +1,6 @@
 .sky {
-    background-color:lightskyblue;
+    /* background-color:lightskyblue; */
+    background: linear-gradient( lightskyblue 60%, dodgerblue);
     width: 100vw;
     height: 45vh;
     position: fixed;
@@ -65,4 +66,5 @@
 
 .title h1 {
   font-size: 2.4rem;
+  color: whitesmoke;
 }
