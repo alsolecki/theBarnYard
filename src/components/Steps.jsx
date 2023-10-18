@@ -25,9 +25,10 @@ import './Steps.css'
 const DuckButton = () => {
     const [ duckBtnIsActive, setDuckBtnIsActive ] = useState(false);
     function duckEntrance() {
-        !duckBtnIsActive ? (console.log('duck button triggered')) : (console.log('duck button deactivated'));
+        !duckBtnIsActive ? (alert('Duckie is Here!')) : (console.log('duck button deactivated'));
 
         setDuckBtnIsActive(!duckBtnIsActive);
+
     }
 
     return (
@@ -38,6 +39,7 @@ const DuckButton = () => {
         </button>
     )
 }
+
 
 
 const Steps = ( { doorIsClosed, duckIsVisible, setDuckIsVisible, cowIsVisible, setCowIsVisible } ) => {
@@ -59,6 +61,7 @@ const Steps = ( { doorIsClosed, duckIsVisible, setDuckIsVisible, cowIsVisible, s
                     <DuckButton 
                         name="Duck"
                     />
+                    
                     {/* <AnimalButton 
                         name="Cow"
                         cowIsVisible={ cowIsVisible }

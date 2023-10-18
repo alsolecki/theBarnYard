@@ -3,8 +3,8 @@ import './App.css'
 import Barn from './components/barn.jsx';
 import Steps from './components/Steps.jsx';
 import Background from './components/background.jsx'
-import Navbar2 from './navbar/Navbar2.jsx'
 import Duck from './components/Duck.jsx'
+import SiteNavBar from './navbar/SiteNavBar.jsx';
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>   
-      <Navbar2 />
+      <SiteNavBar />
 
       <Background />
 
